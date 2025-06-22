@@ -57,12 +57,14 @@ nav ul{
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	gap: 150px;
+	/* adjusted on 22 jun  */
+	gap: 80px;
+	flex-wrap: wrap;
 }
 
 nav ul li{
 	display: inline;
-	margin: 0 10 px;
+	margin: 0 10px;
 }
 
 nav ul li a{
@@ -362,6 +364,7 @@ p{
 
 
    /* Contant starts Here  */
+   /* on 16 jun - 17 jun 2025  */
 
    #contact{
 	margin: 50px;
@@ -392,7 +395,7 @@ p{
 	text-decoration: underline;
 }
 
-
+   /* 17 jun 2025 work  */
 
 /* Back to top button styling */
 #backToTopBtn {
@@ -416,6 +419,56 @@ p{
 #backToTopBtn:hover {
   background-color: #2b2929;
   color: #fff;
+}
+
+
+
+
+/* 22 jun 2025  */
+/* media queries */
+
+@media(max-width: 768px){
+	header{
+		padding: 15px 10px;
+		text-align: center;
+	}
+
+	nav ul{
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.about-content{
+			flex-direction: column;
+			text-align: center;
+	}
+
+	.about-content img{
+		width: 120px;
+	}
+
+	.education-content .edu-item{
+		width: 90%;
+	}
+
+	.skill-content{
+		gap: 20px;
+	}
+
+	.crtfct-bx{
+		width: 90%;
+	}
+
+	#contact{
+		margin: 20px 10px;
+		padding: 20px;
+	}
+
+	#resumeBtn{
+		position: static;
+		margin-top: 10px;
+		display: inline-block;
+	}
 }
 
 
